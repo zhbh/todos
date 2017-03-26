@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+
 import { ADD_TODO, COMPLETE_TODO, FILTER_TYPE, FILTER } from '../actions/actions';
 
 const initState = {
@@ -68,5 +69,6 @@ const todoApp = combineReducers({
     todos,
     filterType
 })
+
 
 export default todoApp

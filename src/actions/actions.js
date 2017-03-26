@@ -1,6 +1,7 @@
 export const ADD_TODO = 'ADD_TODO';
 
 export function addTodo(text){
+<<<<<<< HEAD
   return { type: ADD_TODO, text };
 }
 
@@ -21,3 +22,7 @@ export const FILTER = {
   UNCOMPELE: 'UNCOMPELE',
   COMPELED: 'COMPELED'
 };
+=======
+  return { type: ADD_TODO, text }
+}
+>>>>>>> 07dbd7cfe989d7c807460680020f131dcd5c8b31

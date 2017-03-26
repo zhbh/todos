@@ -7,9 +7,6 @@ import { Provider } from 'react-redux';
 import todoApp from './reducers/reducers'
 
 let store = createStore(todoApp);
-store.subscribe(()=>{
-  console.log(store.getState());
-});
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "todolist",
+=======
+  "name": "todos",
+>>>>>>> 07dbd7cfe989d7c807460680020f131dcd5c8b31
   "version": "0.1.0",
   "private": true,
   "dependencies": {
