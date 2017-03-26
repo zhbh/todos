@@ -37,32 +37,32 @@ function filterType(state = FILTER.ALL, action){
     return state
 }
 
-function curState(state = initState, action){
-  switch( action.type ) {
-    case ADD_TODO:
-      return Object.assign({},state,{ todos:[
-        ...state.todos,
-        {
-          text: action.text,
-          id: new Date().getTime(),
-          completed: false
-        }
-      ] } )
-    case COMPLETE_TODO:
-      return Object.assign({},state,{ todos:state.todos.map((todo,index)=>{
-         if( todo.id === action.id ) {
-            todo.completed = !todo.completed;
-         }
-         return todo;
-      })})
-    case FILTER_TYPE:
-      return Object.assign({},state,{
-          ftype: action.ftype
-      })
-    default:
-      return state
-  }
-}
+// function curState(state = initState, action){
+//   switch( action.type ) {
+//     case ADD_TODO:
+//       return Object.assign({},state,{ todos:[
+//         ...state.todos,
+//         {
+//           text: action.text,
+//           id: new Date().getTime(),
+//           completed: false
+//         }
+//       ] } )
+//     case COMPLETE_TODO:
+//       return Object.assign({},state,{ todos:state.todos.map((todo,index)=>{
+//          if( todo.id === action.id ) {
+//             todo.completed = !todo.completed;
+//          }
+//          return todo;
+//       })})
+//     case FILTER_TYPE:
+//       return Object.assign({},state,{
+//           ftype: action.ftype
+//       })
+//     default:
+//       return state
+//   }
+// }
 
 const todoApp = combineReducers({
     todos,
